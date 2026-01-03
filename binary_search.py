@@ -21,4 +21,4 @@ def binary_search(arr, target):
 
 # Let's try the function
 sequence = [2, 4, 6, 8, 10, 12]
-print(binary_search(sequence, 12))
+print(binary_search(sequence, 8))
