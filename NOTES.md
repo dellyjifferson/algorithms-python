@@ -26,3 +26,7 @@ Binary Search:
 3- Complexity O(log n)
 
 POV: According to me the Binary Search is fast as long as the array is sorted if we are facing a case with an unordered array we better use the Linear Search Logic because sorting takes times. But that is as long as we gonna make only one search, if we gonna make many searches we better sort the array then use the Binary Search method.
+
+## Sorting Algorithms
+### Bubble Sort
+Bubble is one of the simpliest method for sorting arrays. But it is slow O(n^2), it is that complex due to the nested loops for comparisons and swapping. The optimized version of that algorithm saves time by using a flag for when no swap occurs in the last pass of the loop. If no swap happened that means the list is already sorted O(n). Despite of its simplicity the Bubble Sort Algorithm  is rarely used in production systems because its performance degrades rapidly as the input size grows. As an Engineer this algorithm teaches me that some methods may look simple to implement but perfomance is not guaranteed  and choosing a perfect algorithm for a specific case require a deep study of that case in order to know how much data I will be dealing with.
