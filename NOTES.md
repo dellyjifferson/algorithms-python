@@ -40,3 +40,10 @@ Insertion Sort Algorithm is one of the most used logic in small datasets (Not as
 
 ### Selection Sort
 Selection sort algorithm is a very understandible concept. But it is always O(n^2) what makes it not so efficient. Why is it always O(n^2)? The reason is Because it performs a fixed number of comparisons regardless of input order. Even if we are doing fewer swaps that doesn't make it faster because it  always performs the same number of comparisons regardless of the input data. What makes it different to insertion sort. Insertion sort take each value from the unsorted portion, then insert it where it belongs to the sorted portion by shifting the rest of the array. Even if we are minimizing swaps that doesn't mean the time of execution will be reduced.
+
+### Merge Sort
+
+Merge Sort is an efficient and stable sorting algorithm based on the Divide and Conquer principle. It works by recursively dividing the array into two halves, sorting each half, and then merging the sorted halves into a single sorted array. The algorithm repeatedly splits the array until each sub-array contains only one element, which is inherently sorted. During the merge step, elements from the left and right sub-arrays are compared and placed in the correct order.
+
+Merge Sort has a **time complexity of O(n log n)** in all cases, which makes its performance predictable and efficient for large datasets. However, it requires **additional memory**, giving it a **space complexity of O(n)**. This extra memory comes from creating temporary sub-arrays and from recursive function calls.
+Because of its stable behavior and guaranteed performance, Merge Sort is often used in systems where consistent speed is more important than memory usage.
