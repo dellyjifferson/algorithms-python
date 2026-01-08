@@ -47,3 +47,13 @@ Merge Sort is an efficient and stable sorting algorithm based on the Divide and 
 
 Merge Sort has a **time complexity of O(n log n)** in all cases, which makes its performance predictable and efficient for large datasets. However, it requires **additional memory**, giving it a **space complexity of O(n)**. This extra memory comes from creating temporary sub-arrays and from recursive function calls.
 Because of its stable behavior and guaranteed performance, Merge Sort is often used in systems where consistent speed is more important than memory usage.
+
+### Quick Sort
+
+Quick Sort is a fast and efficient sorting algorithm based on the **Divide and Conquer** principle. An array with zero or one element is considered already sorted. The algorithm works by selecting an element from the array called the **pivot**. In this implementation, the middle element is chosen as the pivot. The remaining elements are compared to the pivot and divided into three groups:
+- elements smaller than the pivot
+- elements equal to the pivot
+- elements greater than the pivot
+
+The algorithm is then applied recursively to the left and right sub-arrays. Finally, the sorted sub-arrays are concatenated with the pivot elements to produce the sorted result. Quick Sort performs very well on average with a time complexity of **O(n log n)**. However, in the worst case—when the pivot is always the smallest or largest element—the time complexity degrades to **O(n²)**.
+Compared to Merge Sort, which divides the array independently of its values, Quick Sort partitions the array based on a chosen pivot. This often makes Quick Sort faster in practice, but less predictable in performance.
