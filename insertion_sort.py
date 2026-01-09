@@ -11,9 +11,6 @@ def insertion_sort_swap(arr):
     return arr
 
 # Testing the function to sort a list of even numbers
-even_numbers = [28, 4, 2, 6, 8, 10, 14, 16, 12]
-sorted_numbers = insertion_sort_swap(even_numbers)
-print(sorted_numbers)
 
 # Insertion Sort Algorithm Shift method
 
@@ -30,6 +27,14 @@ def insertion_sort_shift(arr):
     return arr
 
 # Testing the function to sort a list of odd numbers
-odd_numbers = [27, 3, 1, 5, 7, 9, 13, 15, 11]
-sorted_odd_numbers = insertion_sort_shift(odd_numbers)
-print(sorted_odd_numbers)
+if __name__ == "__main__":
+    # Testing the function to sort a list of even numbers (insertion_sort_swap)
+    even_numbers = [28, 4, 2, 6, 8, 10, 14, 16, 12]
+    print("Original even numbers:", even_numbers)
+    sorted_numbers = insertion_sort_swap(even_numbers)
+    print("Sorted even numbers using swap method:", sorted_numbers)
+    # Testing the function to sort a list of odd numbers (insertion_sort_shift)
+    odd_numbers = [27, 3, 1, 5, 7, 9, 13, 15, 11]
+    print("Original odd numbers:", odd_numbers)
+    sorted_odd_numbers = insertion_sort_shift(odd_numbers)
+    print("Sorted odd numbers using shift method:", sorted_odd_numbers)
