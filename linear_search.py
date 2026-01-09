@@ -6,10 +6,12 @@ def linear_search(arr, target):
             return i
     return None
 
-array = [4, 5, 1, 8, 7, 3, 2, 9]
+# Testing linear search function
+if __name__ == "__main__":
+    array = [4, 5, 1, 8, 7, 3, 2, 9]
 
-result = linear_search(array, 8)
-if result != None:
-    print(f"Found at position {result}")
-else:
-    print("Not Found!")
+    result = linear_search(array, 8)
+    if result != None:
+        print(f"Found at position {result}")
+    else:
+        print("Not Found!")
