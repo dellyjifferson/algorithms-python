@@ -11,6 +11,8 @@ def selection_sort(arr):
     return arr
 
 # Example usage
-array = [64, 25, 12, 22, 11]
-sorted_array = selection_sort(array)
-print("Sorted array is:", sorted_array)
+if __name__ == "__main__":
+    array = [64, 25, 12, 22, 11]
+    print("Original array is:", array)
+    sorted_array = selection_sort(array)
+    print("Sorted array is:", sorted_array)
