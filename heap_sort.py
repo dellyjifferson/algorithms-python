@@ -35,3 +35,10 @@ def heap_sort(arr):
 # arr = array of elements to be sorted
 # n = size of the array
 # i = index of the root element of the heap
+
+# Example usage:
+if __name__ == "__main__":
+    sample_array = [12, 11, 13, 5, 6, 7]
+    print("Unsorted array:", sample_array)
+    sorted_array = heap_sort(sample_array)
+    print("Sorted array:", sorted_array)
