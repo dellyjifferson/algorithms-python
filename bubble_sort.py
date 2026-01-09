@@ -22,11 +22,12 @@ def bubble_sort_v2(arr):
     return arr
 
 # Testing the bubble sort functions
-array1 = [64, 34, 25, 12, 22, 11, 90]
-array2 = [5, 1, 4, 2, 8]
-print("Original array1:", array1)
-sorted_array1_v1 = bubble_sort_v1(array1.copy())
-print("Sorted array1 using bubble_sort_v1:", sorted_array1_v1)
-print("Original array2:", array2)
-sorted_array2_v2 = bubble_sort_v2(array2.copy())
-print("Sorted array2 using bubble_sort_v2:", sorted_array2_v2)
+if __name__ == "__main__":
+    array1 = [64, 34, 25, 12, 22, 11, 90]
+    array2 = [5, 1, 4, 2, 8]
+    print("Original array1:", array1)
+    sorted_array1_v1 = bubble_sort_v1(array1.copy())
+    print("Sorted array1 using bubble_sort_v1:", sorted_array1_v1)
+    print("Original array2:", array2)
+    sorted_array2_v2 = bubble_sort_v2(array2.copy())
+    print("Sorted array2 using bubble_sort_v2:", sorted_array2_v2)
