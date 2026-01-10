@@ -59,3 +59,25 @@ Quick Sort is a fast and efficient sorting algorithm based on the **Divide and C
 
 The algorithm is then applied recursively to the left and right sub-arrays. Finally, the sorted sub-arrays are concatenated with the pivot elements to produce the sorted result. Quick Sort performs very well on average with a time complexity of **O(n log n)**. However, in the worst case—when the pivot is always the smallest or largest element—the time complexity degrades to **O(n²)**.
 Compared to Merge Sort, which divides the array independently of its values, Quick Sort partitions the array based on a chosen pivot. This often makes Quick Sort faster in practice, but less predictable in performance.
+
+### Heap Sort
+
+Heap Sort is a comparison-based sorting algorithm that uses a binary heap data structure. It is widely used in systems where predictable performance is required because it guarantees a time complexity of O(n log n) in all cases (best, average, and worst).
+
+Heap Sort works in two main phases:
+1. Heap Construction (Heapify Phase)
+First, the array is transformed into a Max Heap, a complete binary tree where:
+Every parent node is greater than or equal to its children. The largest element is always located at the root (index 0).
+The process of heapify ensures that the heap property is maintained by comparing a node with its children and swapping if necessary. This operation is applied from the last non-leaf node up to the root, because leaf nodes already satisfy the heap property.
+2. Sorting Phase
+Once the max heap is built:
+- The root element (maximum) is swapped with the last element of the heap
+- The heap size is reduced by one
+- Heapify is applied again to restore the heap property
+This process is repeated until all elements are sorted.
+
+Characteristics
+- Time Complexity: O(n log n)
+- Space Complexity: O(1) (in-place)
+- Stability: Not stable
+- Performance: Predictable and safe
