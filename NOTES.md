@@ -81,3 +81,11 @@ Characteristics
 - Space Complexity: O(1) (in-place)
 - Stability: Not stable
 - Performance: Predictable and safe
+
+### DFS vs BFS (First Contact)
+
+DFS goes deep before exploring siblings.
+BFS explores level by level.
+
+Today I focused on understanding the intuition, not mastery.
+I will implement them properly when my brain is fresh.
