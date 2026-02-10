@@ -83,4 +83,28 @@ Characteristics
 - Performance: Predictable and safe
 
 ### DFS vs BFS 
+BFS (Breadth-First Search)
+Purpose: To traverse or search through a graph or tree level by level.
+Approach: Starts at a selected node (source) and explores all its neighbors before moving to the next level.
+How it works: 
+1. Use a queue to keep track of nodes to visit.
+2. Mark the starting node as visited and enqueue it.
+3. While the queue is not empty:
+    - Dequeue a node.
+    - Process it (e.g., print or check for a condition).
+    - Enqueue all its unvisited neighbors and mark them as visited.
+Use cases: Shortest path in unweighted graphs, level order traversal in trees.
+
+DFS (Depth-First Search)
+Purpose: To explore as far as possible along each branch before backtracking.
+Approach: Starts at a selected node and explores as deep as possible along each branch before backtracking.
+How it works:
+1. Use a stack (or recursion) to keep track of nodes.
+2. Mark the starting node as visited.
+3. For each neighbor:
+  - If unvisited, visit it recursively or push it onto the stack.
+4. Continue until all reachable nodes are visited.
+
+Use cases: Detecting cycles, topological sorting, pathfinding in certain contexts.
+
 
